@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "*.jsondb": "json",
-        "*.jsdb": "json",
-        "ostream": "cpp",
-        "*.tcc": "cpp",
-        "iostream": "cpp"
-    }
-}
