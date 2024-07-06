@@ -191,12 +191,10 @@ class ClientPlayer {
                     int newCard = 0;
                     NewCardPacket >> newCard;
                     int tempCodeStorer = 0;
-                    std::cout << newCard << " - " << tempCodeStorer << "\n";
                     if(newCard == 201 || newCard == 202) {
                         tempCodeStorer = newCard;
                         NewCardPacket >> newCard;
                     }
-                    std::cout << newCard << " - " << tempCodeStorer << "\n";
 
                     for(int i = 0; i < 24; i++) {
                         if(cardsOnTable[i] == 0) {
@@ -204,10 +202,8 @@ class ClientPlayer {
                             break;
                         }
                     }
-                    std::cout << newCard << " - " << tempCodeStorer << "\n";
 
                     if(tempCodeStorer == 201 || tempCodeStorer == 202) newCard = tempCodeStorer;
-                    std::cout << newCard << " - " << tempCodeStorer << "\n";
                     
                     if(newCard == cardsInHand[0]) {
                         for(int i = 0; i < 11; i++) cardsInHand[i] = cardsInHand[i+1];
