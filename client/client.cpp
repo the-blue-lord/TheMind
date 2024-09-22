@@ -10,6 +10,8 @@ int main(void) {
     std::cout << "Insert the server ip adress> ";
     std::cin >> serverAdress;
     int serverPort = 32000;
+    std::cout << "Insert the server port> ";
+    std::cin >> serverPort;
 
     ClientPlayer player(serverAdress, serverPort);
 
